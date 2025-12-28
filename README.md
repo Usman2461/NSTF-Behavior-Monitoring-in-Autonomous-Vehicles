@@ -63,9 +63,6 @@ Custom Multi-Modal Dataset:
 
 Description: A custom dataset to emulate real-world AV sensory streams and contextual information.
 
-Access: The dataset is available upon request. Please contact the authors or check the supplementary material for more details.
-
-
 Citations
 
 If you use or reference this work, please cite the following paper:
