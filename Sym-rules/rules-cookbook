@@ -1,0 +1,62 @@
+Finalized Symbolic Rules (R1 to R8):
+
+R1: If the vehicle fails to stop at a red light AND there are no other vehicles moving, THEN a violation is detected, prompting an immediate classification of the maneuver as unsafe.
+
+R2: If the vehicle is too close to another object AND it is not braking, THEN a violation is detected.
+
+R3: If the vehicle is exceeding the speed limit AND the road type is residential, THEN a violation is detected.
+
+R4: If the vehicle is within a lane but the turn signal is not active, THEN a violation is detected.
+
+R5: If the vehicle is speeding AND the road type is residential, THEN a violation is detected.
+
+R6: If the vehicle is too close to the next vehicle AND there is no safe following distance, THEN a violation is detected.
+
+R7: If the vehicle is performing an unsafe lane change without activating the turn signal, THEN a violation is detected, prompting the symbolic reasoning engine to trigger two critical outcomes: (1) the maneuver is formally classified as a behavioral violation, and (2) a comprehensive explanation trace is recorded for subsequent auditing.
+
+R8: If the vehicle is approaching a pedestrian crosswalk, AND visibility is limited (due to fog, rain, or nighttime driving conditions), AND pedestrian cues are unclear, THEN the vehicle should execute a precautionary stop.
+
+
+
+
+Extra Symbolic Rules (R9 to R28):
+
+R9: If the vehicle is speeding AND there is a sharp turn ahead, THEN a violation is detected, as the vehicle should decelerate for safety.
+
+R10: If the vehicle is traveling in the wrong direction on a one-way street, THEN a violation is detected.
+
+R11: If the vehicle is over-speeding in a school zone, THEN a violation is detected, triggering a warning for potential child presence.
+
+R12: If the vehicle is changing lanes abruptly without proper signal AND there are other vehicles in proximity, THEN a violation is detected.
+
+R13: If the vehicle blocks an intersection while the light is green (for cross traffic), THEN a violation is detected.
+
+R14: If the vehicle fails to yield to a pedestrian at a crosswalk, THEN a violation is detected.
+
+R15: If the vehicle is driving too closely to a cyclist, AND the vehicle’s speed is above 45 km/h, THEN a violation is detected, suggesting unsafe distance.
+
+R16: If the vehicle is in a no parking zone, THEN a violation is detected.
+
+R17: If the vehicle disregards a stop sign, even if the intersection is clear, THEN a violation is detected.
+
+R18: If the vehicle is exceeding the speed limit AND there is heavy rain or snow, THEN a violation is detected due to reduced visibility.
+
+R19: If the vehicle is not signaling for a lane change, AND there is a vehicle in the adjacent lane, THEN a violation is detected.
+
+R20: If the vehicle is turning left at a red light, AND there is no dedicated left turn lane, THEN a violation is detected.
+
+R21: If the vehicle is in the wrong lane for the direction of travel at an intersection, THEN a violation is detected.
+
+R22: If the vehicle is driving in a bus lane during restricted hours, THEN a violation is detected.
+
+R23: If the vehicle is speeding AND the road is wet or slippery, THEN a violation is detected, as it increases risk.
+
+R24: If the vehicle is approaching a school bus with its lights flashing, and the vehicle does not stop, THEN a violation is detected.
+
+R25: If the vehicle is not maintaining a safe distance from emergency vehicles with lights flashing, THEN a violation is detected.
+
+R26: If the vehicle does not stop for a red flashing pedestrian signal, THEN a violation is detected.
+
+R27: If the vehicle is turning left without checking for oncoming traffic, THEN a violation is detected.
+
+R28: If the vehicle is speeding in construction zones and the worker presence is detected, THEN a violation is detected.
